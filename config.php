@@ -1,4 +1,12 @@
 <?php
+
+// Dynamic Base URL for Local vs Live
+if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost') {
+    define('BASE_URL', '/gestev/');
+} else {
+    define('BASE_URL', '/');
+}
+
 //Live
 $host = "localhost";
 $username = "gestevkl_gestev";

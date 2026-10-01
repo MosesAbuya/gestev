@@ -18,13 +18,13 @@ if (!$product) {
 
 // Format department name for breadcrumb
 $deptNames = [
-    'it-office' => ['IT & Office Supplies', '/gestev/it-office-supplies'],
-    'ortho' => ['Orthopaedics & Mobility', '/gestev/orthopaedics-mobility'],
-    'patient-care' => ['Patient Care & Clinical', '/gestev/patient-care'],
-    'medical-equipment' => ['Medical Equipments', '/gestev/medical-equipment']
+    'it-office' => ['IT & Office Supplies', '<?= BASE_URL ?>it-office-supplies'],
+    'ortho' => ['Orthopaedics & Mobility', '<?= BASE_URL ?>orthopaedics-mobility'],
+    'patient-care' => ['Patient Care & Clinical', '<?= BASE_URL ?>patient-care'],
+    'medical-equipment' => ['Medical Equipments', '<?= BASE_URL ?>medical-equipment']
 ];
 
-$deptData = isset($deptNames[$product['department']]) ? $deptNames[$product['department']] : ['Products', '/gestev/'];
+$deptData = isset($deptNames[$product['department']]) ? $deptNames[$product['department']] : ['Products', '<?= BASE_URL ?>'];
 $deptTitle = $deptData[0];
 $deptLink = $deptData[1];
 
@@ -32,12 +32,12 @@ include 'includes/header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner bg-dark text-white text-center" style="background-image: url('/gestev/assets/images/<?= htmlspecialchars($product['image_filename']) ?>');">
+<section class="page-banner bg-dark text-white text-center" style="background-image: url('<?= BASE_URL ?>assets/images/<?= htmlspecialchars($product['image_filename']) ?>');">
     <div class="hero-overlay"></div>
     <div class="container position-relative z-2">
         <h1 class="display-4 fw-bold mb-3" data-aos="fade-up"><?= htmlspecialchars($product['name']) ?></h1>
         <div class="eyebrow justify-content-center text-white" data-aos="fade-up" data-aos-delay="100">
-            <a href="/gestev/">HOME</a> &nbsp;/&nbsp; 
+            <a href="<?= BASE_URL ?>">HOME</a> &nbsp;/&nbsp; 
             <a href="<?= $deptLink ?>"><?= strtoupper($deptTitle) ?></a> &nbsp;/&nbsp; 
             <?= strtoupper(htmlspecialchars($product['category'])) ?>
         </div>
@@ -50,7 +50,7 @@ include 'includes/header.php';
         <div class="row align-items-center g-5">
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="bg-white p-3 rounded shadow-sm">
-                    <img src="/gestev/assets/images/<?= htmlspecialchars($product['image_filename']) ?>" class="img-fluid rounded w-100" alt="<?= htmlspecialchars($product['name']) ?>" style="height: 500px; object-fit: cover;">
+                    <img src="<?= BASE_URL ?>assets/images/<?= htmlspecialchars($product['image_filename']) ?>" class="img-fluid rounded w-100" alt="<?= htmlspecialchars($product['name']) ?>" style="height: 500px; object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-5" data-aos="fade-left">

@@ -1,11 +1,11 @@
 RewriteEngine On
-RewriteBase /gestev/
+# RewriteBase /gestev/  <- If you get 404s on cPanel, change this to RewriteBase /
 
 # Remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-# Route products: /gestev/product/product-slug
+# Route products: /product/product-slug
 RewriteRule ^product/([a-zA-Z0-9_-]+)$ product.php?slug=$1 [QSA,L]
 
 # Route departments without .php

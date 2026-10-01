@@ -31,11 +31,11 @@
                 <h1 class="fw-bold mb-3 text-white" style="font-size: 4rem; line-height: 1.1;" data-aos="fade-right" data-aos-delay="100">Quality Supplies. Reliable Delivery.</h1>
                 <p class="mb-4 text-light" data-aos="fade-up" data-aos-delay="200">Serving private & government sectors with general merchandise, IT, orthopaedics & clinical supplies.</p>
                 <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="/gestev/contact" class="btn btn-primary">
+                    <a href="<?= BASE_URL ?>contact" class="btn btn-primary">
                         Get Free Estimate
                         <span class="icon-box"><i class="fas fa-arrow-right fs-6"></i></span>
                     </a>
-                    <a href="/gestev/about" class="play-btn">
+                    <a href="<?= BASE_URL ?>about" class="play-btn">
                         <i class="fas fa-info-circle"></i> Learn More
                     </a>
                 </div>
@@ -67,7 +67,7 @@
                 <h5 class="mb-3">IT & Office Supplies</h5>
                 <p class="text-muted small mb-4 flex-grow-1">Equipping modern workplaces with cutting-edge tech.</p>
                 <img src="assets/images/Sleek corporate ultrabook open on a clean desk.jpg" alt="IT Supplies">
-                <a href="/gestev/it-office-supplies" class="text-dark fw-bold mt-3 text-decoration-none d-flex align-items-center justify-content-between">
+                <a href="<?= BASE_URL ?>it-office-supplies" class="text-dark fw-bold mt-3 text-decoration-none d-flex align-items-center justify-content-between">
                     Learn More <i class="fas fa-arrow-right text-primary"></i>
                 </a>
             </div>
@@ -126,7 +126,7 @@
                     <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Every service reflects our passion for excellence.</li>
                 </ul>
                 
-                <a href="/gestev/about" class="btn btn-primary">
+                <a href="<?= BASE_URL ?>about" class="btn btn-primary">
                     More About Us
                     <span class="icon-box"><i class="fas fa-arrow-right fs-6"></i></span>
                 </a>
@@ -148,7 +148,7 @@
             
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-card position-relative bg-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
-                    <a href="/gestev/it-office-supplies" class="stretched-link"></a>
+                    <a href="<?= BASE_URL ?>it-office-supplies" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="mb-0">IT & Office</h5>
                         <span class="text-muted fw-bold small">01.</span>
@@ -165,7 +165,7 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card position-relative bg-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
-                    <a href="/gestev/medical-equipment" class="stretched-link"></a>
+                    <a href="<?= BASE_URL ?>medical-equipment" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="mb-0">Medical Equipment</h5>
                         <span class="text-muted fw-bold small">02.</span>
@@ -182,7 +182,7 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-card position-relative bg-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
-                    <a href="/gestev/patient-care" class="stretched-link"></a>
+                    <a href="<?= BASE_URL ?>patient-care" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="mb-0">Patient Care</h5>
                         <span class="text-muted fw-bold small">03.</span>
@@ -199,7 +199,7 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-card position-relative bg-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
-                    <a href="/gestev/orthopaedics-mobility" class="stretched-link"></a>
+                    <a href="<?= BASE_URL ?>orthopaedics-mobility" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="mb-0">Orthopaedics</h5>
                         <span class="text-muted fw-bold small">04.</span>
@@ -216,7 +216,7 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="service-card position-relative bg-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
-                    <a href="/gestev/about" class="stretched-link"></a>
+                    <a href="<?= BASE_URL ?>about" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="mb-0">General Logistics</h5>
                         <span class="text-muted fw-bold small">05.</span>
@@ -233,7 +233,7 @@
             
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                 <div class="service-card position-relative bg-primary text-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
-                    <a href="/gestev/contact" class="stretched-link"></a>
+                    <a href="<?= BASE_URL ?>contact" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="mb-0 text-white">Custom Requests</h5>
                         <span class="text-white opacity-75 fw-bold small">06.</span>
@@ -285,7 +285,7 @@
                     </div>
                 </div>
                 
-                <a href="/gestev/contact" class="btn btn-primary">
+                <a href="<?= BASE_URL ?>contact" class="btn btn-primary">
                     Contact Us Today
                     <span class="icon-box"><i class="fas fa-arrow-right fs-6"></i></span>
                 </a>
@@ -323,7 +323,7 @@
                 </div>
 
                 <div>
-                    <a href="/gestev/contact" class="btn btn-light text-primary btn-lg rounded-pill px-5 fw-bold shadow-sm">
+                    <a href="<?= BASE_URL ?>contact" class="btn btn-light text-primary btn-lg rounded-pill px-5 fw-bold shadow-sm">
                         Book an Appointment <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
@@ -366,7 +366,7 @@
                         <li class="mb-3"><i class="fas fa-square text-primary me-2" style="font-size: 8px;"></i> Standard delivery timelines</li>
                         <li class="mb-3"><i class="fas fa-square text-primary me-2" style="font-size: 8px;"></i> Invoice-based transactions</li>
                     </ul>
-                    <a href="/gestev/contact" class="btn btn-outline-light w-100 justify-content-between rounded-0 py-3">Request a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="<?= BASE_URL ?>contact" class="btn btn-outline-light w-100 justify-content-between rounded-0 py-3">Request a Quote <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
@@ -382,7 +382,7 @@
                         <li class="mb-3"><i class="fas fa-square text-dark me-2" style="font-size: 8px;"></i> Priority sourcing & inventory lock</li>
                         <li class="mb-3"><i class="fas fa-square text-dark me-2" style="font-size: 8px;"></i> Discounted volume pricing</li>
                     </ul>
-                    <a href="/gestev/contact" class="btn btn-dark text-white w-100 justify-content-between rounded-0 py-3">Partner With Us <i class="fas fa-arrow-right"></i></a>
+                    <a href="<?= BASE_URL ?>contact" class="btn btn-dark text-white w-100 justify-content-between rounded-0 py-3">Partner With Us <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
@@ -397,7 +397,7 @@
                         <li class="mb-3"><i class="fas fa-square text-primary me-2" style="font-size: 8px;"></i> Dedicated Project Manager</li>
                         <li class="mb-3"><i class="fas fa-square text-primary me-2" style="font-size: 8px;"></i> Complex logistics & staging</li>
                     </ul>
-                    <a href="/gestev/contact" class="btn btn-outline-light w-100 justify-content-between rounded-0 py-3">Contact Procurement <i class="fas fa-arrow-right"></i></a>
+                    <a href="<?= BASE_URL ?>contact" class="btn btn-outline-light w-100 justify-content-between rounded-0 py-3">Contact Procurement <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

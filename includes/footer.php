@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <img src="/gestev/assets/logo/gestev-logo.png" alt="Gestev Logo" class="mb-4 bg-white p-2" style="max-height: 50px; border-radius: 4px;">
+                <img src="<?= BASE_URL ?>assets/logo/gestev-logo.png" alt="Gestev Logo" class="mb-4 bg-white p-2" style="max-height: 50px; border-radius: 4px;">
                 <p class="text-white mb-2 fw-bold mt-3">Working Hours:</p>
                 <p class="mb-1 small">Monday - Friday: 08:00 AM - 05:00 PM</p>
                 <p class="small">Saturday - Sunday: Closed</p>
@@ -62,6 +62,6 @@
 <!-- AOS Animation JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- SweetAlert2 --><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!-- Custom JS -->
-<script src="/gestev/assets/js/main.js"></script>
+<script src="<?= BASE_URL ?>assets/js/main.js"></script>
 </body>
 </html>

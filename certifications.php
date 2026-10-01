@@ -5,7 +5,7 @@
     <div class="hero-overlay"></div>
     <div class="container position-relative z-2">
         <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Certifications & Compliance</h1>
-        <div class="eyebrow justify-content-center text-white" data-aos="fade-up" data-aos-delay="100"><a href="/gestev/index">Home</a> &nbsp;/&nbsp; About Us &nbsp;/&nbsp; Certifications</div>
+        <div class="eyebrow justify-content-center text-white" data-aos="fade-up" data-aos-delay="100"><a href="<?= BASE_URL ?>index">Home</a> &nbsp;/&nbsp; About Us &nbsp;/&nbsp; Certifications</div>
     </div>
 </section>
 
@@ -76,7 +76,7 @@
                 <div class="bg-dark text-white p-5 rounded">
                     <h4 class="mb-3">Require Copies for Procurement?</h4>
                     <p class="text-white-50 mb-4">If you are a procurement officer representing a government entity or private institution and require copies of our statutory documents for vendor onboarding, please reach out.</p>
-                    <a href="/gestev/contact" class="btn btn-primary">
+                    <a href="<?= BASE_URL ?>contact" class="btn btn-primary">
                         Request Documents
                         <span class="icon-box"><i class="fas fa-download fs-6"></i></span>
                     </a>

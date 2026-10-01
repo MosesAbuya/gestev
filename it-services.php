@@ -5,7 +5,7 @@
     <div class="hero-overlay"></div>
     <div class="container position-relative z-2">
         <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">IT Services & Maintenance</h1>
-        <div class="eyebrow justify-content-center text-white" data-aos="fade-up" data-aos-delay="100"><a href="/gestev/index">Home</a> &nbsp;/&nbsp; Departments &nbsp;/&nbsp; IT Services</div>
+        <div class="eyebrow justify-content-center text-white" data-aos="fade-up" data-aos-delay="100"><a href="<?= BASE_URL ?>index">Home</a> &nbsp;/&nbsp; Departments &nbsp;/&nbsp; IT Services</div>
     </div>
 </section>
 
@@ -19,7 +19,7 @@
             <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
                 <div class="eyebrow">Beyond Hardware</div>
                 <h2 class="display-5 mb-4">Comprehensive IT Support & Maintenance</h2>
-                <p class="text-muted mb-4">At Gestev K. Ltd, we don't just supply computers—we ensure they run flawlessly. Our dedicated IT services team handles everything from initial software deployment to ongoing maintenance, ensuring your corporate infrastructure remains secure and efficient.</p>
+                <p class="text-muted mb-4">At Gestev K. Ltd, we don't just supply computersÃ¢â‚¬â€we ensure they run flawlessly. Our dedicated IT services team handles everything from initial software deployment to ongoing maintenance, ensuring your corporate infrastructure remains secure and efficient.</p>
                 
                 <div class="d-flex align-items-start gap-3 mb-4">
                     <div class="icon-square bg-primary text-white flex-shrink-0" style="width: 50px; height: 50px; font-size: 20px;">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
 
-                <a href="/gestev/contact" class="btn btn-primary mt-2">
+                <a href="<?= BASE_URL ?>contact" class="btn btn-primary mt-2">
                     Request IT Support
                     <span class="icon-box"><i class="fas fa-arrow-right fs-6"></i></span>
                 </a>

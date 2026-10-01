@@ -21,6 +21,8 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="<?= BASE_URL ?>">
+
     <meta charset="UTF-8">
     <title>Gestev Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -53,7 +55,7 @@ if (isset($_GET['logout'])) {
     <div class="top-navbar d-flex justify-content-between align-items-center">
         <h5 class="mb-0 text-dark">Control Panel</h5>
         <div>
-            <a href="/gestev/" class="btn btn-outline-secondary btn-sm me-2" target="_blank">View Site</a>
+            <a href="<?= BASE_URL ?>" class="btn btn-outline-secondary btn-sm me-2" target="_blank">View Site</a>
             <a href="?logout=1" class="btn btn-danger btn-sm">Logout</a>
         </div>
     </div>

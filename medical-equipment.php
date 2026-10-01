@@ -14,7 +14,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="container position-relative z-2">
         <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Medical Equipments Supply</h1>
         <div class="eyebrow justify-content-center text-white" data-aos="fade-up" data-aos-delay="100">
-            <a href="/gestev/index">Home</a> &nbsp;/&nbsp; Departments &nbsp;/&nbsp; Medical Equipment
+            <a href="<?= BASE_URL ?>index">Home</a> &nbsp;/&nbsp; Departments &nbsp;/&nbsp; Medical Equipment
         </div>
     </div>
 </section>
