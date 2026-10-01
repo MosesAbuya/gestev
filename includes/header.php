@@ -1,3 +1,4 @@
+<?php if (!defined('BASE_URL')) require_once __DIR__ . '/../config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <title>Gestev K. Limited - Quality Service Delivery</title>
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= BASE_URL ?>assets/favicon/favicon.ico" type="image/x-icon">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
 <?php $isHome = (basename($_SERVER['PHP_SELF']) == 'index.php'); ?>
 <nav class="navbar navbar-expand-lg fixed-top <?= $isHome ? 'navbar-dark' : 'navbar-light bg-white shadow-sm border-0' ?>" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="<?= BASE_URL ?>">
             <img src="<?= BASE_URL ?>assets/logo/gestev-logo.png" alt="Gestev K. Limited Logo" style="height: 40px; <?= $isHome ? 'background: white; padding: 5px; border-radius: 4px;' : '' ?>">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -45,16 +46,16 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="<?= BASE_URL ?>about">Company Overview</a></li>
                         <li><a class="dropdown-item" href="<?= BASE_URL ?>our-team">Our Leadership Team</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>certifications">Certifications & Compliance</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>certifications">Certifications &amp; Compliance</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle <?= in_array(basename($_SERVER['PHP_SELF']), ['it-office-supplies.php', 'orthopaedics-mobility.php', 'patient-care.php', 'medical-equipment.php', 'it-services.php']) ? 'active' : '' ?>" href="#" data-bs-toggle="dropdown">Departments</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>it-office-supplies">IT & Office Supplies</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>it-services">IT Services & Maintenance</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>orthopaedics-mobility">Orthopaedics & Mobility</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>patient-care">Patient Care & Clinical</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>it-office-supplies">IT &amp; Office Supplies</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>it-services">IT Services &amp; Maintenance</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>orthopaedics-mobility">Orthopaedics &amp; Mobility</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>patient-care">Patient Care &amp; Clinical</a></li>
                         <li><a class="dropdown-item" href="<?= BASE_URL ?>medical-equipment">Specialized Medical Equipment</a></li>
                     </ul>
                 </li>
@@ -62,7 +63,7 @@
             </ul>
         </div>
         <div class="d-none d-lg-block">
-            <a href="contact.php" class="btn btn-primary">
+            <a href="<?= BASE_URL ?>contact" class="btn btn-primary">
                 Contact Us
                 <span class="icon-box"><i class="fas fa-arrow-right fs-6"></i></span>
             </a>
