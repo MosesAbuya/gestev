@@ -8,7 +8,13 @@ RewriteRule ^(.*)/$ /$1 [L,R=301]
 # Route products: /product/product-slug
 RewriteRule ^product/([a-zA-Z0-9_-]+)$ product.php?slug=$1 [QSA,L]
 
+# Route Admin
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin/([a-zA-Z0-9_-]+)$ admin/$1.php [QSA,L]
+
 # Route departments without .php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [QSA,L]
+
