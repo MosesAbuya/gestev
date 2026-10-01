@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+﻿<?php include 'includes/header.php'; ?>
 
 <!-- Page Banner -->
 <section class="page-banner bg-dark text-white text-center" style="background-image: url('assets/images/Corporate client service representative wearing a headset in a modern office setup.jpg');">
@@ -15,7 +15,7 @@
         
         <div class="row mb-5 text-center justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
-                <div class="eyebrow mb-2">LETâ€™S WORK TOGETHER</div>
+                <div class="eyebrow mb-2">LET'S WORK TOGETHER</div>
                 <h2 class="display-5 mb-4">Get in touch.</h2>
                 <p class="lead text-muted">Tell us what you need. We will take it from there.</p>
                 <div class="alert alert-info mt-4 text-start">
@@ -101,3 +101,4 @@
 </section>
 
 <?php include 'includes/footer.php'; ?>
+

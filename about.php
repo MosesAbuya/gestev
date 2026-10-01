@@ -13,7 +13,7 @@
 <section class="section-padding">
     <div class="container">
         <div class="row align-items-center g-5">
-            <div class="col-lg-5 position-relative" data-aos="fade-right">
+            <div class="col-lg-5 position-relative d-none d-lg-block" data-aos="fade-right">
                 <img src="assets/images/Dual-monitor desktop computer setup with slim CPU casing and wireless peripherals.jpg" class="img-fluid rounded" alt="About Us" style="height: 600px; object-fit: cover; width: 100%;">
                 <div class="experience-badge bg-primary">
                     <h3 class="mb-0 text-white">2019</h3>
@@ -47,7 +47,7 @@
                         <i class="fas fa-eye"></i>
                     </div>
                     <div>
-                        <h3 class="mb-3">Our Vision</h3>
+                        <h3 class="mb-3 text-white">Our Vision</h3>
                         <p class="text-white-50">To excel in our field sourcing, effective packaging, and timely delivery of quality goods and services to our customers. We are committed to being the most trusted and relied-upon business partner in providing best-in-class supply of goods and services.</p>
                     </div>
                 </div>
@@ -165,3 +165,5 @@
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+

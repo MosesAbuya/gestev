@@ -72,7 +72,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
             <div class="overlap-card p-0 overflow-hidden h-100">
                 <img src="assets/images/Business team in professional attire reviewing contracts, blueprints, or catalogs around a conference table.jpg" alt="Team" style="height: 100%; border-radius: var(--border-radius);">
             </div>
@@ -163,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card position-relative bg-white rounded p-4 h-100 d-flex flex-column shadow-sm transition-hover">
                     <a href="<?= BASE_URL ?>medical-equipment" class="stretched-link"></a>
                     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -290,7 +290,7 @@
                     <span class="icon-box"><i class="fas fa-arrow-right fs-6"></i></span>
                 </a>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
                 <img src="assets/images/Professional handshake between enterprise clients across a clean desk with tablets and documentation.jpg" class="img-fluid rounded" alt="Professional Handshake" style="border-radius: 20px 20px 0 20px; box-shadow: -20px -20px 0 var(--light-bg);">
             </div>
         </div>
@@ -307,7 +307,7 @@
             </div>
             <div class="col-lg-6 bg-primary text-white d-flex flex-column justify-content-center p-5 p-lg-5">
                 <div class="eyebrow text-white opacity-75 mb-3"><i class="fas fa-stethoscope me-2"></i> Visit Our Physical Clinic</div>
-                <h2 class="display-6 fw-bold mb-4">Patient Appointments & Assessments</h2>
+                <h2 class="display-6 fw-bold mb-4 text-white">Patient Appointments & Assessments</h2>
                 <p class="lead mb-4 opacity-75" style="font-size: 1.1rem;">
                     For comprehensive patient assessments, precise measurement fittings, and dedicated follow-ups on prosthetics and orthotics, our specialist team is ready to assist you.
                 </p>
@@ -430,7 +430,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
                 <div class="card border-0 rounded overflow-hidden position-relative h-100" style="min-height: 400px;">
                     <img src="assets/images/Pediatric cerebral palsy  tilt-in-space wheelchair with lateral trunk supports and headrest.jpg" class="position-absolute w-100 h-100" style="object-fit: cover;" alt="Wheelchair">
                     <div class="position-absolute bottom-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); z-index: 2;">
@@ -507,3 +507,5 @@
 
 
 <?php include 'includes/footer.php'; ?>
+
+
