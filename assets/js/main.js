@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(this);
-            fetch('/gestev/process_contact.php', {
+            fetch(this.action, {
                 method: 'POST',
                 body: formData
             })
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         subscribeForm.addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(this);
-            fetch('/gestev/process_subscribe.php', {
+            fetch(this.action, {
                 method: 'POST',
                 body: formData
             })
@@ -96,3 +96,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+

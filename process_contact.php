@@ -16,15 +16,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name'] ?? '');
     $email = htmlspecialchars($_POST['email'] ?? '');
     $phone = htmlspecialchars($_POST['phone'] ?? '');
+    $subject = htmlspecialchars($_POST['subject'] ?? '');
+    $product_id = !empty($_POST['product_id']) ? (int)$_POST['product_id'] : null;
     $message = htmlspecialchars($_POST['message'] ?? '');
 
     if(!empty($name) && !empty($email) && !empty($message)) {
         try {
+            // Fetch product name if a product was selected
+            $productName = 'None';
+            if ($product_id) {
+                $pStmt = $conn->prepare("SELECT name FROM products WHERE id = :id");
+                $pStmt->execute([':id' => $product_id]);
+                if ($pRes = $pStmt->fetch(PDO::FETCH_ASSOC)) {
+                    $productName = $pRes['name'];
+                }
+            }
+
             // Save to DB
-            $stmt = $conn->prepare("INSERT INTO contact_messages (name, email, phone, message) VALUES (:name, :email, :phone, :message)");
+            $stmt = $conn->prepare("INSERT INTO contact_messages (name, email, phone, subject, product_id, message) VALUES (:name, :email, :phone, :subject, :product_id, :message)");
             $stmt->bindParam(':name', $name);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':phone', $phone);
+            $stmt->bindParam(':subject', $subject);
+            $stmt->bindParam(':product_id', $product_id, PDO::PARAM_INT);
             $stmt->bindParam(':message', $message);
             $stmt->execute();
             
@@ -40,19 +54,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port       = 465;
 
+                $finalSubject = !empty($subject) ? $subject : "New Contact Form Submission";
+                
                 // 1. Email to Admin
                 $mail->setFrom($smtp_user, 'Gestev K. Limited');
                 $mail->addAddress('info@gestevklimited.co.ke');
                 $mail->addReplyTo($email, $name);
                 
                 $mail->isHTML(true);
-                $mail->Subject = "New Contact Form Submission - $name";
+                $mail->Subject = $finalSubject . " - $name";
                 $mail->Body    = "<h3>New Message Received</h3>
                                   <p><strong>Name:</strong> $name</p>
                                   <p><strong>Email:</strong> $email</p>
                                   <p><strong>Phone:</strong> $phone</p>
+                                  <p><strong>Subject:</strong> $subject</p>
+                                  <p><strong>Product Inquiry:</strong> $productName</p>
+                                  <hr/>
                                   <p><strong>Message:</strong><br/>" . nl2br($message) . "</p>";
-                $mail->AltBody = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
+                $mail->AltBody = "Name: $name\nEmail: $email\nPhone: $phone\nSubject: $subject\nProduct Inquiry: $productName\n\nMessage:\n$message";
                 
                 $mail->send();
 
@@ -74,18 +93,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->send();
                 
             } catch (Exception $e) {
-                // If mail fails, we still saved to DB, so we can log error but return success to user, 
-                // OR we return error depending on preference. Usually better to let them know it failed.
                 error_log("Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
-                // Fallthrough to success message so the user doesn't panic if just the SMTP fails, but ideally:
-                // echo json_encode(["status" => "error", "message" => "Message saved, but email notification failed."]);
-                // exit();
             }
 
             echo json_encode(["status" => "success", "message" => "Your message has been sent successfully!"]);
             exit();
         } catch(PDOException $e) {
-            echo json_encode(["status" => "error", "message" => "Database error occurred."]);
+            echo json_encode(["status" => "error", "message" => "Database error occurred. ".$e->getMessage()]);
             exit();
         }
     } else {
