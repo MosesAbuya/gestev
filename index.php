@@ -94,7 +94,7 @@
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-5 position-relative" data-aos="fade-right">
-                <img src="assets/images/Dual-monitor desktop computer setup with slim CPU casing and wireless peripherals.jpg" class="img-fluid rounded" alt="About Us" style="height: 600px; object-fit: cover; width: 100%;">
+                <img src="assets/images/modern_logistics_warehouse_no_people.jpg" class="img-fluid rounded" alt="About Us" style="height: 600px; object-fit: cover; width: 100%;">
                 <div class="experience-badge bg-primary">
                     <h3 class="mb-0 text-white">5+</h3>
                     <span class="small">Years Exp.</span>
@@ -507,5 +507,7 @@
 
 
 <?php include 'includes/footer.php'; ?>
+
+
 
 

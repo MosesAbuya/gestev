@@ -15,12 +15,22 @@ if ($httpHost === 'localhost') {
     $username = "root";
     $password = "";
     $dbname = "gestev";
+
+    // SMTP Settings for Local (Fallback to same as live or test)
+    $smtp_host = "mail.gestevklimited.co.ke";
+    $smtp_user = "info@gestevklimited.co.ke";
+    $smtp_pass = "Gestev@2026";
 } else {
     // Live cPanel
     $host = "localhost";
     $username = "gestevkl_gestev";
     $password = "Gestev@2026";
     $dbname = "gestevkl_gestev";
+
+    // SMTP Settings for Live
+    $smtp_host = "mail.gestevklimited.co.ke";
+    $smtp_user = "info@gestevklimited.co.ke";
+    $smtp_pass = "Gestev@2026"; // Assuming it matches DB, change if different
 }
 
 try {

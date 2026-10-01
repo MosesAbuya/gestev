@@ -58,7 +58,7 @@
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <div>
-                        <h3 class="mb-3">Our Mission Statement</h3>
+                        <h3 class="mb-3 text-white">Our Mission Statement</h3>
                         <p class="text-white-50">To develop long-term partnerships with our customers, embrace change and encourage innovation, consistently meet expectations with quality goods, uphold honesty and integrity, continuously improve our best practices, and offer our employees a challenging and rewarding workplace.</p>
                     </div>
                 </div>
@@ -165,5 +165,6 @@
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
 
 
