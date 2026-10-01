@@ -470,15 +470,15 @@
                     <div class="col-md-6">
                         <div class="bg-white p-5 rounded shadow-sm h-100">
                             <p class="text-muted mb-4 font-italic">"The team turned our procurement needs into a reality from initial planning to final delivery. Everything was managed with professionalism and precision."</p>
-                            <h6 class="mb-0">Wade Warren</h6>
+                            <h6 class="mb-0">Michael Opiyo</h6>
                             <span class="small text-primary">Procurement Officer</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="bg-white p-5 rounded shadow-sm h-100">
-                            <p class="text-muted mb-4 font-italic">"Gestev provided exceptional clinical supplies right on time. Their dedication to quality and patient care products is truly unmatched in the industry."</p>
-                            <h6 class="mb-0">Darlene Robertson</h6>
-                            <span class="small text-primary">Hospital Administrator</span>
+                            <p class="text-muted mb-4 font-italic">"Gestev provided exceptional IT equipment and network maintenance for our team right on time. Their dedication to quality hardware and technical support is truly unmatched."</p>
+                            <h6 class="mb-0">Moses Abuya</h6>
+                            <span class="small text-primary">IT Developer</span>
                         </div>
                     </div>
                 </div>
@@ -507,6 +507,7 @@
 
 
 <?php include 'includes/footer.php'; ?>
+
 
 
 
